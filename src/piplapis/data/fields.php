@@ -867,7 +867,7 @@ class PiplApi_Image extends PiplApi_Field
     }
     public function get_thumbnail_url($width=100, $height=100, $zoom_face=true, $favicon=true, $use_https=false){
         if(!empty($this->thumbnail_token)){
-            return self::generate_redundant_thumbnail_url($this);
+            return self::generate_redundant_thumbnail_url($this, null, $width, $height, $zoom_face, $favicon, $use_https);
         }
         return NULL;
     }
