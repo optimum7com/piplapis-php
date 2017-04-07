@@ -871,7 +871,7 @@ class PiplApi_Image extends PiplApi_Field
         }
         return NULL;
     }
-    public static function generate_redundant_thumbnail_url($first_image, $second_image=NULL, $width=100, $height=100,
+    public static function generate_redundant_thumbnail_url($first_image, $second_image=NULL, $width=500, $height=500,
                                                             $zoom_face=true, $favicon=true, $use_https=false){
         if (empty($first_image) && empty($second_image))
             throw new InvalidArgumentException('Please provide at least one image');
